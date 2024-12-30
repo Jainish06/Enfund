@@ -1,0 +1,37 @@
+a.  What is a VPC in AWS, and what is its purpose?
+
+ans : 
+
+A VPC (Virtual Private Cloud) is a logically isolated section of the AWS cloud where you can:
+
+Define your own IP address ranges.
+Divide the network into smaller sections called subnets.
+Control traffic with security rules like security groups and network ACLs.
+Enable communication between resources in your VPC and the internet, or keep them private.
+Purpose of VPC:
+
+Security: Keeps your resources isolated and provides fine-grained access controls.
+Customization: You can design your network the way you need (e.g., public/private subnets).
+Scalability: Easily connect VPCs or extend them using VPN or AWS Direct Connect.
+Networking Features: Supports routing tables, internet gateways, NAT gateways, and more to control traffic flow.
+A VPC ensures your AWS resources are safe, organized, and flexible to meet your specific networking needs.
+
+b. What are EC2 and Gunicorn in the context of AWS? Why are they used together?
+
+ans :
+
+EC2 (Elastic Compute Cloud) is a service in AWS that lets you run virtual servers in the cloud. It provides scalable computing capacity, so you can host applications, websites, or any software that requires servers.
+
+Think of EC2 as a computer in the cloud that you can rent and use to run your code.
+
+Gunicorn (Green Unicorn) is a lightweight Python web server that can handle multiple web requests simultaneously. It is often used to deploy Python web applications like those built with Flask or Django.
+
+Gunicorn ensures your Python app can handle incoming requests efficiently.
+
+EC2: Provides the infrastructure (the virtual server) where your application runs.
+Gunicorn: Runs your Python web application on the EC2 instance and makes it accessible over the internet.
+By combining EC2 and Gunicorn:
+
+EC2 provides the server environment.
+Gunicorn ensures the Python app is fast, reliable, and can handle many requests at once.
+This combination is ideal for deploying scalable and efficient Python web applications in the cloud
